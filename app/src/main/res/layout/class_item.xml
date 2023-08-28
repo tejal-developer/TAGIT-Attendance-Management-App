@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0.5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+
+    app:layout_goneMarginBottom="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+
+        tools:ignore="RelativeOverlap">
+        <TextView
+            android:id="@+id/class_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/class_name"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/subject_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subject_name"
+            android:textSize="15sp"
+            android:textColor="#878787"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                android:id="@+id/presentPercentageTextView"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="%"
+                android:background="@color/present"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                />
+                <TextView
+                    android:id="@+id/absentPercentageTextView"
+                    android:layout_width="120dp"
+                    android:layout_toRightOf="@id/presentPercentageTextView"
+                    android:layout_height="40dp"
+                    android:text="ABS"
+                    android:background="@color/absent"
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:textAlignment="center"
+                    /></LinearLayout>
+
+            <Button
+                android:id="@+id/takeAttendanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/take_attendance"
+                android:layout_marginEnd="8dp"
+                android:textColor="#3F51B5"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:layout_gravity="center_vertical"/>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
